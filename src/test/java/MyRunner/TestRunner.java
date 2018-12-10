@@ -1,0 +1,15 @@
+package MyRunner;
+
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+	@RunWith(Cucumber.class)
+	@CucumberOptions(
+			features = "Features", //the path of the feature files
+			glue= {"stepDefinitions"}, //the path of the step definition files	
+			plugin = {"html:target/Project_Report"}) //the path to generate report in html format
+	
+	public class TestRunner{
+		
+	}
